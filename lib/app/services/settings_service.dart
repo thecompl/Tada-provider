@@ -76,7 +76,7 @@ class SettingsService extends GetxService {
         hintColor: Ui.parseColor(setting.value.secondDarkColor),
         toggleableActiveColor: Ui.parseColor(setting.value.mainDarkColor),
         textButtonTheme: TextButtonThemeData(
-          // style: TextButton.styleFrom(backgroundColor: Ui.parseColor(setting.value.mainColor)),
+          style: TextButton.styleFrom(backgroundColor: Ui.parseColor(setting.value.mainColor)),
         ),
         colorScheme: ColorScheme.dark(
           primary: Ui.parseColor(setting.value.mainDarkColor),
