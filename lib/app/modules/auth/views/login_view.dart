@@ -126,7 +126,8 @@ class LoginView extends GetView<AuthController> {
                             onPressed: () {
                               Get.toNamed(Routes.FORGOT_PASSWORD);
                             },
-                            child: Text("Forgot Password?".tr),
+                            child: Text("Forgot Password?".tr,
+                            style: Get.textTheme.headline6.merge(TextStyle(color: Get.theme.primaryColor))),
                           ),
                         ],
                       ).paddingSymmetric(horizontal: 20),
@@ -147,7 +148,8 @@ class LoginView extends GetView<AuthController> {
                             onPressed: () {
                               Get.toNamed(Routes.REGISTER);
                             },
-                            child: Text("You don't have an account?".tr),
+                            child: Text("You don't have an account?".tr,
+                            style: Get.textTheme.headlineSmall.merge(TextStyle(color: Get.theme.primaryColor))),
                           ),
                         ],
                       ).paddingSymmetric(vertical: 20),
